@@ -9,12 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet private weak var tableView: UITableView!
+    
+    private let apiService = ApiService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        apiService.fetchRepos(table: tableView, datasource: tableView.dataSource as! RepoListDataSource)
     }
-
-
 }
 
