@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import RxSwift
 
 struct ApiService {
     func fetchRepos(table: UITableView, datasource: RepoListDataSource) {

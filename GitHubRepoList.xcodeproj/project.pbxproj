@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,10 +16,18 @@
 		D20E798F2474137400781624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20E798D2474137400781624 /* LaunchScreen.storyboard */; };
 		D20E799A2474137400781624 /* GitHubRepoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E79992474137400781624 /* GitHubRepoListTests.swift */; };
 		D20E79A52474137500781624 /* GitHubRepoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E79A42474137500781624 /* GitHubRepoListUITests.swift */; };
-		D20E79B42474146300781624 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D20E79B32474146300781624 /* Alamofire */; };
-		D20E79B7247414CB00781624 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = D20E79B6247414CB00781624 /* SwiftyJSON */; };
 		D20E79B92474182700781624 /* RepoListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E79B82474182700781624 /* RepoListDataSource.swift */; };
 		D20E79BB24741B1500781624 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E79BA24741B1500781624 /* ApiService.swift */; };
+		D270A8B62476CAC800FE4686 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D270A8B52476CAC800FE4686 /* Alamofire.framework */; };
+		D270A8B72476CAC800FE4686 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D270A8B52476CAC800FE4686 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D270A8BA2476CAE100FE4686 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D270A8B92476CAE100FE4686 /* SwiftyJSON.framework */; };
+		D270A8BB2476CAE100FE4686 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D270A8B92476CAE100FE4686 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D270A8BD2476CAF300FE4686 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D270A8BC2476CAF300FE4686 /* RxSwift.framework */; };
+		D270A8BE2476CAF300FE4686 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D270A8BC2476CAF300FE4686 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D270A8C32476CB1200FE4686 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D270A8C22476CB1200FE4686 /* RxCocoa.framework */; };
+		D270A8C42476CB1200FE4686 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D270A8C22476CB1200FE4686 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D270A8C62476CB2700FE4686 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D270A8C52476CB2700FE4686 /* RxRelay.framework */; };
+		D270A8C72476CB2700FE4686 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D270A8C52476CB2700FE4686 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +47,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D270A8B82476CAC800FE4686 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D270A8BB2476CAE100FE4686 /* SwiftyJSON.framework in Embed Frameworks */,
+				D270A8B72476CAC800FE4686 /* Alamofire.framework in Embed Frameworks */,
+				D270A8C72476CB2700FE4686 /* RxRelay.framework in Embed Frameworks */,
+				D270A8BE2476CAF300FE4686 /* RxSwift.framework in Embed Frameworks */,
+				D270A8C42476CB1200FE4686 /* RxCocoa.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D20E797C2474137200781624 /* GitHubRepoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubRepoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20E797F2474137200781624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +83,13 @@
 		D20E79A62474137500781624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D20E79B82474182700781624 /* RepoListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListDataSource.swift; sourceTree = "<group>"; };
 		D20E79BA24741B1500781624 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		D270A8B52476CAC800FE4686 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		D270A8B92476CAE100FE4686 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		D270A8BC2476CAF300FE4686 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		D270A8BF2476CB0500FE4686 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		D270A8C22476CB1200FE4686 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		D270A8C52476CB2700FE4686 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		D270A8C82476CB3700FE4686 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +97,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D20E79B7247414CB00781624 /* SwiftyJSON in Frameworks */,
-				D20E79B42474146300781624 /* Alamofire in Frameworks */,
+				D270A8BA2476CAE100FE4686 /* SwiftyJSON.framework in Frameworks */,
+				D270A8B62476CAC800FE4686 /* Alamofire.framework in Frameworks */,
+				D270A8C62476CB2700FE4686 /* RxRelay.framework in Frameworks */,
+				D270A8BD2476CAF300FE4686 /* RxSwift.framework in Frameworks */,
+				D270A8C32476CB1200FE4686 /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +129,7 @@
 				D20E79982474137400781624 /* GitHubRepoListTests */,
 				D20E79A32474137500781624 /* GitHubRepoListUITests */,
 				D20E797D2474137200781624 /* Products */,
+				D270A8B42476CAC800FE4686 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +178,20 @@
 			path = GitHubRepoListUITests;
 			sourceTree = "<group>";
 		};
+		D270A8B42476CAC800FE4686 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D270A8C82476CB3700FE4686 /* RxTest.framework */,
+				D270A8C52476CB2700FE4686 /* RxRelay.framework */,
+				D270A8C22476CB1200FE4686 /* RxCocoa.framework */,
+				D270A8BF2476CB0500FE4686 /* RxBlocking.framework */,
+				D270A8BC2476CAF300FE4686 /* RxSwift.framework */,
+				D270A8B92476CAE100FE4686 /* SwiftyJSON.framework */,
+				D270A8B52476CAC800FE4686 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,6 +202,8 @@
 				D20E79782474137200781624 /* Sources */,
 				D20E79792474137200781624 /* Frameworks */,
 				D20E797A2474137200781624 /* Resources */,
+				D270A8B82476CAC800FE4686 /* Embed Frameworks */,
+				D270A8CB2476CB5900FE4686 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -158,8 +211,6 @@
 			);
 			name = GitHubRepoList;
 			packageProductDependencies = (
-				D20E79B32474146300781624 /* Alamofire */,
-				D20E79B6247414CB00781624 /* SwiftyJSON */,
 			);
 			productName = GitHubRepoList;
 			productReference = D20E797C2474137200781624 /* GitHubRepoList.app */;
@@ -234,9 +285,6 @@
 			);
 			mainGroup = D20E79732474137200781624;
 			packageReferences = (
-				D20E79B22474146300781624 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				D20E79B5247414CB00781624 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
-				D20E79BE247429A100781624 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = D20E797D2474137200781624 /* Products */;
 			projectDirPath = "";
@@ -275,6 +323,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D270A8CB2476CB5900FE4686 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D20E79782474137200781624 /* Sources */ = {
@@ -392,6 +465,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -446,6 +520,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -460,6 +535,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GitHubRepoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -477,6 +556,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GitHubRepoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -609,46 +692,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		D20E79B22474146300781624 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.2.0;
-			};
-		};
-		D20E79B5247414CB00781624 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-		D20E79BE247429A100781624 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.1.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		D20E79B32474146300781624 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D20E79B22474146300781624 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		D20E79B6247414CB00781624 /* SwiftyJSON */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D20E79B5247414CB00781624 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
-			productName = SwiftyJSON;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D20E79882474137200781624 /* GitHubRepoList.xcdatamodeld */ = {
