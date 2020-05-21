@@ -9,7 +9,13 @@
 import UIKit
 
 class RepoListDataSource: NSObject, UITableViewDataSource {
+    private let apiService = ApiService()
     private var data: Array<String> = []
+    
+    override init() {
+        super.init()
+        
+    }
     
     func setData(repos: Array<String>) {
         data = repos
