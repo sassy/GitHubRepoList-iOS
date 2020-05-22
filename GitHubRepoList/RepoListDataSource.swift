@@ -32,5 +32,4 @@ class RepoListDataSource: NSObject, UITableViewDataSource {
         cell.textLabel?.text = data[indexPath.row]
         return cell
     }
-
 }

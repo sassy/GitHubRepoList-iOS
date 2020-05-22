@@ -10,10 +10,8 @@
 		D20E79802474137200781624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E797F2474137200781624 /* AppDelegate.swift */; };
 		D20E79822474137200781624 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E79812474137200781624 /* SceneDelegate.swift */; };
 		D20E79842474137200781624 /* RepoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E79832474137200781624 /* RepoListViewController.swift */; };
-		D20E79872474137200781624 /* RepoListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20E79852474137200781624 /* RepoListView.storyboard */; };
 		D20E798A2474137200781624 /* GitHubRepoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D20E79882474137200781624 /* GitHubRepoList.xcdatamodeld */; };
 		D20E798C2474137400781624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20E798B2474137400781624 /* Assets.xcassets */; };
-		D20E798F2474137400781624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20E798D2474137400781624 /* LaunchScreen.storyboard */; };
 		D20E799A2474137400781624 /* GitHubRepoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E79992474137400781624 /* GitHubRepoListTests.swift */; };
 		D20E79A52474137500781624 /* GitHubRepoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E79A42474137500781624 /* GitHubRepoListUITests.swift */; };
 		D20E79B92474182700781624 /* RepoListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E79B82474182700781624 /* RepoListDataSource.swift */; };
@@ -28,6 +26,13 @@
 		D270A8C42476CB1200FE4686 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D270A8C22476CB1200FE4686 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D270A8C62476CB2700FE4686 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D270A8C52476CB2700FE4686 /* RxRelay.framework */; };
 		D270A8C72476CB2700FE4686 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D270A8C52476CB2700FE4686 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D270A8CD24781F4800FE4686 /* RepoListTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D270A8CC24781F4800FE4686 /* RepoListTableViewDelegate.swift */; };
+		D270A8CF247821DC00FE4686 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D270A8CE247821DC00FE4686 /* Main.storyboard */; };
+		D270A8D12478272B00FE4686 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D270A8D02478272B00FE4686 /* ProfileViewController.swift */; };
+		D270A8D32478286600FE4686 /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D270A8D22478286600FE4686 /* ProfileData.swift */; };
+		D270A8D524782D1D00FE4686 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D270A8D424782D1D00FE4686 /* AlamofireImage.framework */; };
+		D270A8D624782D1D00FE4686 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D270A8D424782D1D00FE4686 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D270A8DB247833F000FE4686 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D270A8D9247833F000FE4686 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,7 @@
 				D270A8BB2476CAE100FE4686 /* SwiftyJSON.framework in Embed Frameworks */,
 				D270A8B72476CAC800FE4686 /* Alamofire.framework in Embed Frameworks */,
 				D270A8C72476CB2700FE4686 /* RxRelay.framework in Embed Frameworks */,
+				D270A8D624782D1D00FE4686 /* AlamofireImage.framework in Embed Frameworks */,
 				D270A8BE2476CAF300FE4686 /* RxSwift.framework in Embed Frameworks */,
 				D270A8C42476CB1200FE4686 /* RxCocoa.framework in Embed Frameworks */,
 			);
@@ -70,10 +76,8 @@
 		D20E797F2474137200781624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D20E79812474137200781624 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D20E79832474137200781624 /* RepoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewController.swift; sourceTree = "<group>"; };
-		D20E79862474137200781624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RepoListView.storyboard; sourceTree = "<group>"; };
 		D20E79892474137200781624 /* GitHubRepoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GitHubRepoList.xcdatamodel; sourceTree = "<group>"; };
 		D20E798B2474137400781624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D20E798E2474137400781624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D20E79902474137400781624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D20E79952474137400781624 /* GitHubRepoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubRepoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20E79992474137400781624 /* GitHubRepoListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepoListTests.swift; sourceTree = "<group>"; };
@@ -90,6 +94,12 @@
 		D270A8C22476CB1200FE4686 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		D270A8C52476CB2700FE4686 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		D270A8C82476CB3700FE4686 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		D270A8CC24781F4800FE4686 /* RepoListTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListTableViewDelegate.swift; sourceTree = "<group>"; };
+		D270A8CE247821DC00FE4686 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D270A8D02478272B00FE4686 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D270A8D22478286600FE4686 /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
+		D270A8D424782D1D00FE4686 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		D270A8DA247833F000FE4686 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +110,7 @@
 				D270A8BA2476CAE100FE4686 /* SwiftyJSON.framework in Frameworks */,
 				D270A8B62476CAC800FE4686 /* Alamofire.framework in Frameworks */,
 				D270A8C62476CB2700FE4686 /* RxRelay.framework in Frameworks */,
+				D270A8D524782D1D00FE4686 /* AlamofireImage.framework in Frameworks */,
 				D270A8BD2476CAF300FE4686 /* RxSwift.framework in Frameworks */,
 				D270A8C32476CB1200FE4686 /* RxCocoa.framework in Frameworks */,
 			);
@@ -146,16 +157,19 @@
 		D20E797E2474137200781624 /* GitHubRepoList */ = {
 			isa = PBXGroup;
 			children = (
+				D270A8D9247833F000FE4686 /* LaunchScreen.storyboard */,
 				D20E797F2474137200781624 /* AppDelegate.swift */,
 				D20E79812474137200781624 /* SceneDelegate.swift */,
 				D20E79832474137200781624 /* RepoListViewController.swift */,
-				D20E79852474137200781624 /* RepoListView.storyboard */,
+				D270A8D02478272B00FE4686 /* ProfileViewController.swift */,
+				D270A8CE247821DC00FE4686 /* Main.storyboard */,
 				D20E798B2474137400781624 /* Assets.xcassets */,
-				D20E798D2474137400781624 /* LaunchScreen.storyboard */,
 				D20E79902474137400781624 /* Info.plist */,
 				D20E79882474137200781624 /* GitHubRepoList.xcdatamodeld */,
 				D20E79B82474182700781624 /* RepoListDataSource.swift */,
 				D20E79BA24741B1500781624 /* ApiService.swift */,
+				D270A8CC24781F4800FE4686 /* RepoListTableViewDelegate.swift */,
+				D270A8D22478286600FE4686 /* ProfileData.swift */,
 			);
 			path = GitHubRepoList;
 			sourceTree = "<group>";
@@ -181,6 +195,7 @@
 		D270A8B42476CAC800FE4686 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D270A8D424782D1D00FE4686 /* AlamofireImage.framework */,
 				D270A8C82476CB3700FE4686 /* RxTest.framework */,
 				D270A8C52476CB2700FE4686 /* RxRelay.framework */,
 				D270A8C22476CB1200FE4686 /* RxCocoa.framework */,
@@ -302,9 +317,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D20E798F2474137400781624 /* LaunchScreen.storyboard in Resources */,
 				D20E798C2474137400781624 /* Assets.xcassets in Resources */,
-				D20E79872474137200781624 /* RepoListView.storyboard in Resources */,
+				D270A8DB247833F000FE4686 /* LaunchScreen.storyboard in Resources */,
+				D270A8CF247821DC00FE4686 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +353,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -356,9 +372,12 @@
 			files = (
 				D20E798A2474137200781624 /* GitHubRepoList.xcdatamodeld in Sources */,
 				D20E79842474137200781624 /* RepoListViewController.swift in Sources */,
+				D270A8D32478286600FE4686 /* ProfileData.swift in Sources */,
+				D270A8CD24781F4800FE4686 /* RepoListTableViewDelegate.swift in Sources */,
 				D20E79BB24741B1500781624 /* ApiService.swift in Sources */,
 				D20E79802474137200781624 /* AppDelegate.swift in Sources */,
 				D20E79B92474182700781624 /* RepoListDataSource.swift in Sources */,
+				D270A8D12478272B00FE4686 /* ProfileViewController.swift in Sources */,
 				D20E79822474137200781624 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,18 +414,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D20E79852474137200781624 /* RepoListView.storyboard */ = {
+		D270A8D9247833F000FE4686 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D20E79862474137200781624 /* Base */,
-			);
-			name = RepoListView.storyboard;
-			sourceTree = "<group>";
-		};
-		D20E798D2474137400781624 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D20E798E2474137400781624 /* Base */,
+				D270A8DA247833F000FE4686 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

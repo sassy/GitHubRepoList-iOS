@@ -12,6 +12,27 @@ import SwiftyJSON
 import RxSwift
 
 struct ApiService {
+    func fetchProfile() -> Observable<ProfileData> {
+        return Observable.create { observer in
+            AF.request("https://api.github.com/users/sassy")
+                .responseJSON { response in
+                    switch response.result {
+                    case .success(let value):
+                        let json = JSON(value)
+                        let profileData = ProfileData(
+                            login: json["login"].stringValue,
+                            name: json["name"].stringValue,
+                            avatarUrl: json["avatar_url"].stringValue
+                        )
+                        observer.onNext(profileData)
+                    case let .failure(error):
+                        observer.onError(error)
+                    }
+            }
+            return Disposables.create()
+        }
+    }
+    
     func fetchRepos() -> Observable<Array<String>> {
         return Observable.create { observer in
             AF.request("https://api.github.com/users/sassy/repos")
