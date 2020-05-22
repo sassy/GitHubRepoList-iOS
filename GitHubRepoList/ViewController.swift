@@ -16,7 +16,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        apiService.fetchRepos(table: tableView, datasource: tableView.dataSource as! RepoListDataSource)
+        apiService.fetchRepos().subscribe(
+            onNext: { array in
+                (self.tableView.dataSource as! RepoListDataSource).setData(repos: array)
+                self.tableView.reloadData()
+            },
+            onError: { error in
+                print(error)
+            }
+        )
     }
 }
 

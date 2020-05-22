@@ -10,7 +10,7 @@ import UIKit
 
 class RepoListDataSource: NSObject, UITableViewDataSource {
     private var data: Array<String> = []
-    
+        
     func setData(repos: Array<String>) {
         data = repos
     }
