@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		D20E79802474137200781624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E797F2474137200781624 /* AppDelegate.swift */; };
 		D20E79822474137200781624 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E79812474137200781624 /* SceneDelegate.swift */; };
-		D20E79842474137200781624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E79832474137200781624 /* ViewController.swift */; };
-		D20E79872474137200781624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20E79852474137200781624 /* Main.storyboard */; };
+		D20E79842474137200781624 /* RepoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E79832474137200781624 /* RepoListViewController.swift */; };
+		D20E79872474137200781624 /* RepoListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20E79852474137200781624 /* RepoListView.storyboard */; };
 		D20E798A2474137200781624 /* GitHubRepoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D20E79882474137200781624 /* GitHubRepoList.xcdatamodeld */; };
 		D20E798C2474137400781624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20E798B2474137400781624 /* Assets.xcassets */; };
 		D20E798F2474137400781624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20E798D2474137400781624 /* LaunchScreen.storyboard */; };
@@ -69,8 +69,8 @@
 		D20E797C2474137200781624 /* GitHubRepoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubRepoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20E797F2474137200781624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D20E79812474137200781624 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D20E79832474137200781624 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D20E79862474137200781624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D20E79832474137200781624 /* RepoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewController.swift; sourceTree = "<group>"; };
+		D20E79862474137200781624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RepoListView.storyboard; sourceTree = "<group>"; };
 		D20E79892474137200781624 /* GitHubRepoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GitHubRepoList.xcdatamodel; sourceTree = "<group>"; };
 		D20E798B2474137400781624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D20E798E2474137400781624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -148,8 +148,8 @@
 			children = (
 				D20E797F2474137200781624 /* AppDelegate.swift */,
 				D20E79812474137200781624 /* SceneDelegate.swift */,
-				D20E79832474137200781624 /* ViewController.swift */,
-				D20E79852474137200781624 /* Main.storyboard */,
+				D20E79832474137200781624 /* RepoListViewController.swift */,
+				D20E79852474137200781624 /* RepoListView.storyboard */,
 				D20E798B2474137400781624 /* Assets.xcassets */,
 				D20E798D2474137400781624 /* LaunchScreen.storyboard */,
 				D20E79902474137400781624 /* Info.plist */,
@@ -304,7 +304,7 @@
 			files = (
 				D20E798F2474137400781624 /* LaunchScreen.storyboard in Resources */,
 				D20E798C2474137400781624 /* Assets.xcassets in Resources */,
-				D20E79872474137200781624 /* Main.storyboard in Resources */,
+				D20E79872474137200781624 /* RepoListView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D20E798A2474137200781624 /* GitHubRepoList.xcdatamodeld in Sources */,
-				D20E79842474137200781624 /* ViewController.swift in Sources */,
+				D20E79842474137200781624 /* RepoListViewController.swift in Sources */,
 				D20E79BB24741B1500781624 /* ApiService.swift in Sources */,
 				D20E79802474137200781624 /* AppDelegate.swift in Sources */,
 				D20E79B92474182700781624 /* RepoListDataSource.swift in Sources */,
@@ -395,12 +395,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D20E79852474137200781624 /* Main.storyboard */ = {
+		D20E79852474137200781624 /* RepoListView.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D20E79862474137200781624 /* Base */,
 			);
-			name = Main.storyboard;
+			name = RepoListView.storyboard;
 			sourceTree = "<group>";
 		};
 		D20E798D2474137400781624 /* LaunchScreen.storyboard */ = {

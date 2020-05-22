@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RepoListViewController.swift
 //  GitHubRepoList
 //
 //  Created by Satoshi Watanabe on 2020/05/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RepoListViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
     
