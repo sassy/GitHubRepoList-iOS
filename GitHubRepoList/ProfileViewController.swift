@@ -23,7 +23,6 @@ class ProfileViewController: UIViewController {
 
         apiService.fetchProfile().subscribe(
             onNext: { profile in
-                print(profile.avatarUrl)
                 self.profileImage.af.setImage(withURL: URL(string:profile.avatarUrl)!)
                 self.loginLabel.text = profile.login
                 self.nameLabel.text = profile.name

@@ -26,13 +26,13 @@
 		D270A8C42476CB1200FE4686 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D270A8C22476CB1200FE4686 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D270A8C62476CB2700FE4686 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D270A8C52476CB2700FE4686 /* RxRelay.framework */; };
 		D270A8C72476CB2700FE4686 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D270A8C52476CB2700FE4686 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D270A8CD24781F4800FE4686 /* RepoListTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D270A8CC24781F4800FE4686 /* RepoListTableViewDelegate.swift */; };
 		D270A8CF247821DC00FE4686 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D270A8CE247821DC00FE4686 /* Main.storyboard */; };
 		D270A8D12478272B00FE4686 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D270A8D02478272B00FE4686 /* ProfileViewController.swift */; };
 		D270A8D32478286600FE4686 /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D270A8D22478286600FE4686 /* ProfileData.swift */; };
 		D270A8D524782D1D00FE4686 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D270A8D424782D1D00FE4686 /* AlamofireImage.framework */; };
 		D270A8D624782D1D00FE4686 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D270A8D424782D1D00FE4686 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D270A8DB247833F000FE4686 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D270A8D9247833F000FE4686 /* LaunchScreen.storyboard */; };
+		D270A8DD24783CCB00FE4686 /* RepoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D270A8DC24783CCB00FE4686 /* RepoDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,12 +94,12 @@
 		D270A8C22476CB1200FE4686 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		D270A8C52476CB2700FE4686 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		D270A8C82476CB3700FE4686 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
-		D270A8CC24781F4800FE4686 /* RepoListTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListTableViewDelegate.swift; sourceTree = "<group>"; };
 		D270A8CE247821DC00FE4686 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D270A8D02478272B00FE4686 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D270A8D22478286600FE4686 /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
 		D270A8D424782D1D00FE4686 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
 		D270A8DA247833F000FE4686 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D270A8DC24783CCB00FE4686 /* RepoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +161,7 @@
 				D20E797F2474137200781624 /* AppDelegate.swift */,
 				D20E79812474137200781624 /* SceneDelegate.swift */,
 				D20E79832474137200781624 /* RepoListViewController.swift */,
+				D270A8DC24783CCB00FE4686 /* RepoDetailViewController.swift */,
 				D270A8D02478272B00FE4686 /* ProfileViewController.swift */,
 				D270A8CE247821DC00FE4686 /* Main.storyboard */,
 				D20E798B2474137400781624 /* Assets.xcassets */,
@@ -168,7 +169,6 @@
 				D20E79882474137200781624 /* GitHubRepoList.xcdatamodeld */,
 				D20E79B82474182700781624 /* RepoListDataSource.swift */,
 				D20E79BA24741B1500781624 /* ApiService.swift */,
-				D270A8CC24781F4800FE4686 /* RepoListTableViewDelegate.swift */,
 				D270A8D22478286600FE4686 /* ProfileData.swift */,
 			);
 			path = GitHubRepoList;
@@ -373,10 +373,10 @@
 				D20E798A2474137200781624 /* GitHubRepoList.xcdatamodeld in Sources */,
 				D20E79842474137200781624 /* RepoListViewController.swift in Sources */,
 				D270A8D32478286600FE4686 /* ProfileData.swift in Sources */,
-				D270A8CD24781F4800FE4686 /* RepoListTableViewDelegate.swift in Sources */,
 				D20E79BB24741B1500781624 /* ApiService.swift in Sources */,
 				D20E79802474137200781624 /* AppDelegate.swift in Sources */,
 				D20E79B92474182700781624 /* RepoListDataSource.swift in Sources */,
+				D270A8DD24783CCB00FE4686 /* RepoDetailViewController.swift in Sources */,
 				D270A8D12478272B00FE4686 /* ProfileViewController.swift in Sources */,
 				D20E79822474137200781624 /* SceneDelegate.swift in Sources */,
 			);

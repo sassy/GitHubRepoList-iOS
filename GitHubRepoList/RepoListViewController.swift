@@ -16,6 +16,7 @@ class RepoListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "レポジトリリスト"
         apiService.fetchRepos().subscribe(
             onNext: { array in
                 (self.tableView.dataSource as! RepoListDataSource).setData(repos: array)
@@ -25,6 +26,21 @@ class RepoListViewController: UIViewController {
                 print(error)
             }
         )
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailSegue" {
+            let detailController = segue.destination as! RepoDetailViewController
+            detailController.receiveText = sender as? String
+        }
+    }
+}
+
+extension RepoListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let datasource = tableView.dataSource as! RepoListDataSource
+        performSegue(withIdentifier: "detailSegue", sender: datasource.getData()[indexPath.row])
     }
 }
 
