@@ -15,6 +15,10 @@ class RepoListDataSource: NSObject, UITableViewDataSource {
         data = repos
     }
     
+    func getData() -> Array<String>{
+        data
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

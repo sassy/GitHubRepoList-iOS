@@ -7,7 +7,24 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Repositories-->
+        <!--Item-->
+        <scene sceneID="bFN-F0-qyz">
+            <objects>
+                <navigationController id="XeT-bP-oHx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="QKP-s6-nyS" userLabel="Repositories"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n73-bC-qX1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fcY-gs-GFz" kind="relationship" relationship="rootViewController" id="QG2-3v-Cxh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lp0-pm-aqj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-401" y="187"/>
+        </scene>
+        <!--Repo List View Controller-->
         <scene sceneID="wPw-Mh-SYh">
             <objects>
                 <viewController id="fcY-gs-GFz" customClass="RepoListViewController" customModule="GitHubRepoList" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,42 +40,58 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="xva-ue-awK" kind="show" id="lhF-Ee-7s0"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="uPI-58-v9v" id="tJh-Xi-t3n"/>
-                            <outlet property="delegate" destination="fEb-tc-Ca2" id="vtP-2E-YLx"/>
+                            <outlet property="delegate" destination="fcY-gs-GFz" id="gr6-uI-z06"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Repositories" id="Ihr-Jr-jE2"/>
+                    <navigationItem key="navigationItem" id="U7s-tJ-Mwc"/>
                     <connections>
                         <outlet property="tableView" destination="OQs-kN-R4o" id="Ybq-vc-s6F"/>
+                        <segue destination="xva-ue-awK" kind="show" identifier="detailSegue" id="FXW-fL-FQT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fFK-56-d0s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <customObject id="fEb-tc-Ca2" customClass="RepoListTableViewDelegate" customModule="GitHubRepoList" customModuleProvider="target"/>
                 <customObject id="uPI-58-v9v" customClass="RepoListDataSource" customModule="GitHubRepoList" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="-448" y="171"/>
+            <point key="canvasLocation" x="326" y="218"/>
         </scene>
-        <!--View Controller-->
+        <!--Repo Detail View Controller-->
         <scene sceneID="9qu-zi-VMR">
             <objects>
-                <viewController id="xva-ue-awK" sceneMemberID="viewController">
+                <viewController id="xva-ue-awK" customClass="RepoDetailViewController" customModule="GitHubRepoList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lXa-nz-oKN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyt-s0-p8G">
+                                <rect key="frame" x="82" y="423" width="250" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="DeW-Mg-Jwy"/>
+                                    <constraint firstAttribute="height" constant="50" id="PYn-RG-cX7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Qyt-s0-p8G" firstAttribute="centerY" secondItem="lXa-nz-oKN" secondAttribute="centerY" id="7o2-18-mBk"/>
+                            <constraint firstItem="Qyt-s0-p8G" firstAttribute="centerX" secondItem="lXa-nz-oKN" secondAttribute="centerX" id="SVx-fT-1Mq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1Yo-sk-kTV"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZRv-vG-aVx"/>
+                    <connections>
+                        <outlet property="detailLabel" destination="Qyt-s0-p8G" id="PRf-9i-6OK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hgz-YV-50j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="336" y="184"/>
+            <point key="canvasLocation" x="1212" y="218"/>
         </scene>
         <!--Profile-->
         <scene sceneID="m41-Vi-ffk">
@@ -134,7 +167,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="1Mg-si-Hfr" kind="relationship" relationship="viewControllers" id="hmM-kf-EqX"/>
-                        <segue destination="fcY-gs-GFz" kind="relationship" relationship="viewControllers" id="5bS-j0-eJw"/>
+                        <segue destination="XeT-bP-oHx" kind="relationship" relationship="viewControllers" id="fuv-eA-Yw2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jeu-KK-J3C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
